@@ -1,5 +1,5 @@
-import { sectorOusar } from '../../utils/SectorsOusar'
-import { Sectors } from '../Sectors'
+import { sectorOusar } from '../../../utils/SectorsOusar'
+import { Sectors } from '../../Sectors'
 
 
 export const SectionTwoHome = () => {

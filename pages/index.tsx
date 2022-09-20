@@ -1,7 +1,8 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import { SectionOneHome } from '../components/SectionOneHome'
-import { SectionTwoHome } from '../components/SectionTwoHome'
+import { SectionOneHome } from '../components/Home/SectionOneHome'
+import { SectionTwoHome } from '../components/Home/SectionTwoHome'
+import { SectionThreeHome } from '../components/Home/SectionThreeHome'
 
 const Home: NextPage = () => {
   return (
@@ -19,6 +20,9 @@ const Home: NextPage = () => {
       </div>
       <div className="bg-black min-h-screen py-8 flex justify-center items-center">
         <SectionTwoHome />
+      </div>
+      <div className="bg-black min-h-screen py-8 flex justify-center items-center">
+        <SectionThreeHome />
       </div>
     </>
   )
