@@ -21,7 +21,7 @@ const Home: NextPage = () => {
       <div className="bg-black min-h-screen py-8 flex justify-center items-center">
         <SectionTwoHome />
       </div>
-      <div className="bg-black min-h-screen py-8 flex justify-center items-center">
+      <div className="bg-black min-h-screen pt-8 flex justify-center items-center">
         <SectionThreeHome />
       </div>
     </>
