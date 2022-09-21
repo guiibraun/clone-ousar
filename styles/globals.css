@@ -24,16 +24,3 @@ a {
   box-sizing: border-box;
 }
 
-.swiper {
-  padding: 32px;
-}
-
-.swiper-slide {
-  display: flex;
-  justify-content: center;
-}
-
-.swiper-button-prev:after,
-.swiper-button-next:after {
-  color: white
-}

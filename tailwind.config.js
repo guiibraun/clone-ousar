@@ -19,7 +19,9 @@ module.exports = {
         'bg-section-home': "url('/images/bg-section-one.png')",
       },
       colors: {
-        'red': '#ff0000'
+        'red': '#ff0000',
+        'blackOusar': '#0c0003',
+        'blackSubmit': '#131414'
       }
     },
   },

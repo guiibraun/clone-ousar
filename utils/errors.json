@@ -1,0 +1,11 @@
+{
+    "name": {
+        "required": "Nome é um campo obrigatório"
+    },
+    "phone": {
+        "required": "Telefone é um campo obrigatório"
+    },
+    "email": {
+        "required": "E-mail é um campo obrigatório"
+    }
+}

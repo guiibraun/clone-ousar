@@ -5,7 +5,7 @@ type Props = {
     image: StaticImageData
 }
 
-export const Cases = ({path, image}: Props) => {
+export const Cases = ({image}: Props) => {
     return (
         <>
             <Image src={image} layout='responsive'/>

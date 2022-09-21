@@ -1,0 +1,13 @@
+.swiperClientes .swiper {
+    padding: 32px;
+}
+
+.swiperClientes .swiper-slide {
+    display: flex;
+    justify-content: center;
+}
+
+.swiperClientes .swiper-button-prev:after,
+.swiperClientes .swiper-button-next:after {
+    color: white
+}
