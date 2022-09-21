@@ -15,10 +15,7 @@ export const BemVindo = () => {
                         inteligência corporativa e marketing digital.</p>
                     <Link href="/quem-somos"><a className="bg-red p-4 rounded text-white w-fit">Quem Somos</a></Link>
                 </div>
-                <div className="max-w-full">
-                    <ReactPlayer url='https://www.youtube.com/watch?v=5a84tXRpBJI' width="auto"/>
-                </div>
-                    {/* <iframe className="w-full" height="315" src="https://www.youtube.com/embed/5a84tXRpBJI" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe> */}
+                <ReactPlayer url='https://www.youtube.com/watch?v=5a84tXRpBJI' width="auto" height="300px" controls />
             </div>
         </div>
     )

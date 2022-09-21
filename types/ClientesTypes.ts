@@ -1,6 +1,5 @@
 import { StaticImageData } from "next/image";
 
-export type CasesType = {
+export type ClientesType = {
     image: StaticImageData,
-    path: string
 }

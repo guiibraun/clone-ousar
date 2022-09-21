@@ -3,6 +3,7 @@ import Head from 'next/head'
 import { BemVindo } from '../components/Home/BemVindo'
 import { OQueFazemos } from '../components/Home/OQueFazemos'
 import { CasesOusar } from '../components/Home/CasesOusar'
+import { Clientes } from '../components/Home/Clientes'
 
 
 const Home: NextPage = () => {
@@ -18,6 +19,7 @@ const Home: NextPage = () => {
       <BemVindo />
       <OQueFazemos />
       <CasesOusar />
+      <Clientes />
     </>
   )
 }

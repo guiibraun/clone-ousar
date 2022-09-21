@@ -1,7 +1,8 @@
 import Image from "next/image"
+import { memo } from "react"
 import LogoOusar from '../../public/images/logo-ousar.png'
 
-export const Header = () => {
+const Header = () => {
     return (
         <div className="relative container">
             <div className="absolute text-white grid grid-cols-2 w-full container py-4">
@@ -23,3 +24,5 @@ export const Header = () => {
             </div>
     )
 }
+
+export default memo(Header)
