@@ -17,6 +17,7 @@ const validationSchema = yup.object({
     name: yup.string().required(),
     email: yup.string().required(),
     phone: yup.string().required(),
+    message: yup.string()
 })
 
 export const Form = () => {
