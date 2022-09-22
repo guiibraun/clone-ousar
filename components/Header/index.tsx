@@ -39,7 +39,7 @@ const Header = () => {
 
                     {menu && 
                         <div className="lg:hidden">
-                            <ul className="flex flex-col p-4 mt-4 bg-black rounded-lg absolute w-11/12 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0">
+                            <ul className="flex flex-col p-4 mt-4 font-bold bg-black rounded-lg absolute w-11/12 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0">
                                 {navLinks.map((item, index) => (
                                     <li key={index}><Link href={item.path[0]}>{item.label}</Link></li>
                                 ))}
@@ -51,9 +51,9 @@ const Header = () => {
 
 
                     {/* Menu Desktop */}
-                    <ul className="lg:flex justify-end gap-x-4 hidden">
+                    <ul className="lg:flex justify-end gap-x-16 hidden font-bold">
                         {navLinks.map((item, index) => (
-                            <li key={index}><Link href={item.path[0]}>{item.label}</Link></li>
+                            <li key={index} className="hover:text-red"><Link href={item.path[0]}>{item.label}</Link></li>
                         ))}
                     </ul>
                     {/* Fim Menu Desktop */}
