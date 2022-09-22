@@ -1,4 +1,4 @@
-
+import {Errors} from '../../utils/ErrorsUtils'
 interface Props {
     error: string
 }

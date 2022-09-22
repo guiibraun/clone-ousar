@@ -33,7 +33,7 @@ export const Clientes = () => {
                 <Slider settings={settings}>
                     {clientesUtils.map((item, index) => (
                         <SwiperSlide key={index}>
-                            <Image src={item.image} />
+                            <Image src={item.image} alt=''/>
                         </SwiperSlide>
                     ))}
                 </Slider>

@@ -8,7 +8,7 @@ type Props = {
 export const Cases = ({image}: Props) => {
     return (
         <>
-            <Image src={image} layout='responsive'/>
+            <Image src={image} layout='responsive' alt=''/>
         </>
     )
 }

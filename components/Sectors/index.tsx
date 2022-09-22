@@ -11,8 +11,8 @@ export const Sectors = ({name, path}: Props) => {
     return (
         <>
             <div className="flex flex-col gap-y-8 items-center">
-                <Image src={path} width={118} height={38}/>
-                <Image src={Flecha} />
+                <Image src={path} width={118} height={38} alt=''/>
+                <Image src={Flecha} alt=''/>
                 <div className="text-white text-red text-xl font-medium	">{name}</div>
             </div>
 
