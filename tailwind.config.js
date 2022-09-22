@@ -13,7 +13,7 @@ module.exports = {
           md: '728px',
           lg: '984px',
           xl: '1140px',
-          '2xl': '1600px'
+          '2xl': '1440px'
         }
       },
       backgroundImage: {
@@ -22,7 +22,8 @@ module.exports = {
       colors: {
         'red': '#ff0000',
         'blackOusar': '#0c0003',
-        'blackSubmit': '#131414'
+        'blackSubmit': '#131414',
+        'rodapeColor': '#636363',
       }
     },
   },

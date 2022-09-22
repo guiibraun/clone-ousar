@@ -42,7 +42,7 @@ export const Form = () => {
 
     return (
         <>
-            <h4>Entre em contato conosco: </h4>
+            <h4 className="text-xl mb-4">Entre em contato conosco: </h4>
             <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-y-4">
                 <input type="text" placeholder='Seu nome' {...register('name')} className="py-2 px-4 text-black"/>
                 {/* {errors?.name?.type && 
