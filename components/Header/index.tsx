@@ -51,7 +51,7 @@ const Header = () => {
 
 
                     {/* Menu Desktop */}
-                    <ul className="lg:flex justify-end gap-x-16 hidden font-bold">
+                    <ul className="lg:flex justify-end gap-x-4 hidden font-bold">
                         {navLinks.map((item, index) => (
                             <li key={index} className="hover:text-red"><Link href={item.path[0]}>{item.label}</Link></li>
                         ))}
