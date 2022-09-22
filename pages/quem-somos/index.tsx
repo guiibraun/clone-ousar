@@ -1,6 +1,16 @@
+import Head from "next/head"
+import { SomosOusar } from "../../components/QuemSomos/SomosOusar";
+
 const QuemSomos = () => {
     return (
-        <div className="min-h-screen bg-black">Quem Somos</div>
+        <>
+        <Head>
+            <title>Quem Somos | Agência Ousar</title>
+        </Head>
+            <div>
+                <SomosOusar/>
+            </div>
+        </>
     )
 }
 
