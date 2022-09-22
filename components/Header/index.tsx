@@ -39,7 +39,7 @@ const Header = () => {
 
                     {menu && 
                         <div className="lg:hidden">
-                            <ul className="flex flex-col p-4 mt-4 bg-black rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0">
+                            <ul className="flex flex-col p-4 mt-4 bg-black rounded-lg absolute w-11/12 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0">
                                 {navLinks.map((item, index) => (
                                     <li key={index}><Link href={item.path[0]}>{item.label}</Link></li>
                                 ))}
