@@ -1,15 +1,12 @@
-import errors from '../../utils/errors.json'
 
 interface Props {
-    type: string,
-    field: string
+    error: string
 }
 
-export const InputError = ({ type, field }: Props) => {
-    //@ts-expect-error
+export const InputError = ({ error }: Props) => {
     return (
         <span className="text-sm text-red">
-            {errors[field][type]}
+            O campo {error} é obrigatório.
         </span>
     )
 }

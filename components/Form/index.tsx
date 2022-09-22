@@ -53,15 +53,15 @@ export const Form = () => {
             <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-y-4">
                 <input type="text" placeholder='Seu nome' {...register('name')} className="py-2 px-4 text-black"/>
                 {errors?.name?.type && 
-                    <InputError type={`${errors?.name?.type}`} field="name" />
+                    <InputError error="nome" />
                 }
                 <input type="email" placeholder='Seu melhor e-mail' {...register('email')} className="py-2 px-4 text-black"/>
                 {errors?.email?.type &&
-                    <InputError type={`${errors?.email?.type}`} field="email" />
+                    <InputError error="e-mail" />
                 }
                 <input type="text" placeholder='Seu melhor telefone' {...register('phone')} className="py-2 px-4 text-black"/>
                 {errors?.phone?.type &&
-                    <InputError type={`${errors?.phone?.type}`} field="phone" />
+                    <InputError error="telefone" />
                 }
                 <textarea className="py-2 px-4 text-black" rows={6} placeholder='Mensagem' {...register('message')}/>
                 <input type="submit" value="Enviar" className="bg-blackSubmit p-2"/>
