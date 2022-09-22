@@ -10,7 +10,6 @@ import menuIcon from '../../public/images/menu.svg'
 const Header = () => {
     const [menu, setMenu] = useState(false)
     const { pathname } = useRouter()
-
     const showMenu = () => {
         if(menu === false) {
             setMenu(true)
@@ -31,6 +30,7 @@ const Header = () => {
                         <a><Image src={LogoOusar} width={106} height={17} alt='' /></a>
                     </Link>
                 </div>
+
                 <button className="lg:hidden justify-end flex" onClick={showMenu}>
                     <Image alt='' src={menuIcon} />
                 </button>
@@ -64,3 +64,7 @@ const Header = () => {
 }
 
 export default Header
+
+function useMobileMenu(): [any, any, any] {
+    throw new Error("Function not implemented.")
+}
