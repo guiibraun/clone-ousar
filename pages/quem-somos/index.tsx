@@ -1,6 +1,6 @@
 const QuemSomos = () => {
     return (
-        <div>Quem Somos</div>
+        <div className="min-h-screen bg-black">Quem Somos</div>
     )
 }
 

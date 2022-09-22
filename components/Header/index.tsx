@@ -1,13 +1,15 @@
 import Image from "next/image"
 import Link from "next/link"
+import { useRouter } from "next/router"
 import { memo, useEffect, useState } from "react"
 import LogoOusar from '../../public/images/logo-ousar.png'
 import { navLinks } from "../../utils/menu"
-
+import menuIcon from '../../public/images/menu.svg'
 
 
 const Header = () => {
     const [menu, setMenu] = useState(false)
+    const { pathname } = useRouter()
 
     const showMenu = () => {
         if(menu === false) {
@@ -17,15 +19,20 @@ const Header = () => {
         }
     }
 
+    useEffect(() => {
+        setMenu(false)
+    }, [pathname])
 
     return (
-        <div className="relative container">
+        <div className="relative container z-40">
             <div className="absolute text-white grid grid-cols-2 w-full md:py-8 p-4">
                 <div>
-                    <Image src={LogoOusar} width={106} height={17} alt=''/>
+                    <Link href='/' >
+                        <a><Image src={LogoOusar} width={106} height={17} alt='' /></a>
+                    </Link>
                 </div>
                 <button className="lg:hidden justify-end flex" onClick={showMenu}>
-                    <svg className="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                    <Image alt='' src={menuIcon} />
                 </button>
                 <nav>
                     {/* Menu Mobile */}
@@ -56,4 +63,4 @@ const Header = () => {
     )
 }
 
-export default memo(Header)
+export default Header
