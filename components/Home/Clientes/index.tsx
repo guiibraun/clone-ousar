@@ -6,12 +6,13 @@ import styles from '../../../styles/Clientes.module.css'
 
 const settings: SwiperProps = {
     spaceBetween: 50,
+    slidesPerView: 6,
     autoplay: {
-        delay: 200,
+        delay: 1000,
     },
     grabCursor: true,
     draggable: true,
-    lazy: true,
+    loop: true,
     breakpoints: {
         300: {
             slidesPerView: 2,
