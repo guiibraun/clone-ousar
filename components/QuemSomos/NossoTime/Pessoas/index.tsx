@@ -1,6 +1,6 @@
 import { TimeOusar } from '../../../../utils/TimesUtils'
 import Image from "next/image"
-import styles from '../../../../styles/Time.module.css'
+import styles from '../../../../styles/TimeOusar.module.css'
 
 export const Pessoas = () => {
     return (
