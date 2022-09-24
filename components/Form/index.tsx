@@ -1,6 +1,6 @@
 import { toast } from 'react-toastify';
 import { useForm } from 'react-hook-form';
-import { InputError } from '../InputErrors'
+
 import 'react-toastify/dist/ReactToastify.css';
 
 
@@ -41,8 +41,8 @@ export const Form = () => {
     }
 
     return (
-        <>
-            <h4 className="text-xl mb-4">Entre em contato conosco: </h4>
+        <div className="h-full flex flex-col justify-center z-40 w-11/12 mx-auto">
+            <h4 className="text-xl mb-4 text-white">Entre em contato conosco: </h4>
             <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-y-4">
                 <input type="text" placeholder='Seu nome' {...register('name')} className="py-2 px-4 text-black"/>
                 {/* {errors?.name?.type && 
@@ -53,8 +53,8 @@ export const Form = () => {
                 <input type="text" placeholder='Seu melhor telefone' {...register('phone')} className="py-2 px-4 text-black"/>
 
                 <textarea className="py-2 px-4 text-black" rows={6} placeholder='Mensagem' {...register('message')}/>
-                <input type="submit" value="Enviar" className="bg-blackSubmit p-2"/>
+                <input type="submit" value="Enviar" className="bg-blackSubmit p-2 text-white"/>
             </form>
-        </>
+        </div>
     )
 }

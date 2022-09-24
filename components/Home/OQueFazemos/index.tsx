@@ -4,7 +4,7 @@ import { Setores } from '../../Setores'
 
 export const OQueFazemos = () => {
     return (
-        <div className="bg-black min-h-screen py-8 flex justify-center items-center">
+        <div className="bg-black min-h-screen py-8 flex justify-center items-center" id="o-que-fazemos">
             <div className="container gap-y-8 flex flex-col   max-w-6xl">
                 <h2 className="text-4xl text-center md:text-5xl text-3xl">O que Fazemos</h2>
                 <p className='text-white text-center md:text-2xl text-xl mx-auto'>Acompanhamos, identificamos e reagimos em tempo real aos fatores de disrupção tecnológica e social que afetam organizações mundo afora.</p>
