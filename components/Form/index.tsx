@@ -8,7 +8,9 @@ import { InputError } from '../InputErrors';
 
 
 const validationSchema = yup.object({
-    name: yup.string().required()
+    name: yup.string().required(),
+    phone: yup.string().required(),
+    email: yup.string().required()
 })
 
 type FormType = {
@@ -58,9 +60,13 @@ export const Form = () => {
                     <InputError error="nome" />
                 }
                 <input type="email" placeholder='Seu melhor e-mail' {...register('email')} className="py-2 px-4 text-black"/>
-
+                {errors?.email?.type &&
+                    <InputError error="e-mail" />
+                }
                 <input type="text" placeholder='Seu melhor telefone' {...register('phone')} className="py-2 px-4 text-black"/>
-
+                {errors?.phone?.type &&
+                    <InputError error="telefone" />
+                }
                 <textarea className="py-2 px-4 text-black" rows={6} placeholder='Mensagem' {...register('message')}/>
                 <input type="submit" value="Enviar" className="bg-blackSubmit p-2 text-white"/>
             </form>
