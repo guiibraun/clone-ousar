@@ -1,6 +1,5 @@
 import Link from "next/link"
 import React from 'react'
-
 import dynamic from 'next/dynamic';
 
 const ReactPlayer = dynamic(() => import('react-player/lazy'), { ssr: false });
