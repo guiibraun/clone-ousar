@@ -54,7 +54,7 @@ export const Form = () => {
     return (
         <div className='z-50 h-screen flex flex-col justify-center'>
             <h4 className='text-white text-2xl'>Entre em contato conosco: </h4>
-            <form onSubmit={handleSubmit(onSubmit)} action="/thanks" method="POST" className="flex flex-col gap-y-4 " data-netlify="true" name="contact">
+            <form action="/sucess" method="POST" className="flex flex-col gap-y-4 " data-netlify="true" name="contact">
                 <input type="hidden" name="form-name" value="contact" />
                 <input type="text" placeholder='Seu nome' {...register('name')} className="py-2 px-4 text-black" />
                 {errors?.name?.type &&
