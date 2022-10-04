@@ -4,13 +4,16 @@ import { BemVindo } from '../components/Home/BemVindo'
 import { OQueFazemos } from '../components/Home/OQueFazemos'
 import { CasesOusar } from '../components/Home/CasesOusar'
 import { Clientes } from '../components/Home/Clientes'
-import { useRouter } from 'next/router'
+import { PostsType } from '../types/Posts'
 
+type Props = {
+  posts: PostsType[]
+}
 
-const Home: NextPage = () => {
-
+const Home: NextPage<Props> = ({posts}: Props) => {
+  
   return (
-    <>
+    <div>
       <Head>
         <title>Agência Ousar | Isso muda tudo.</title>
       </Head>
@@ -18,7 +21,7 @@ const Home: NextPage = () => {
       <OQueFazemos />
       <CasesOusar />
       <Clientes />
-    </>
+    </div>
   )
 }
 

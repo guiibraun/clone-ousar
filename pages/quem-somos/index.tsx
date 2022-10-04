@@ -1,4 +1,6 @@
 import Head from "next/head"
+import { GPTW } from "../../components/QuemSomos/GPTW";
+import { NossoTime } from "../../components/QuemSomos/NossoTime";
 import { SomosOusar } from "../../components/QuemSomos/SomosOusar";
 
 const QuemSomos = () => {
@@ -9,6 +11,8 @@ const QuemSomos = () => {
         </Head>
             <div>
                 <SomosOusar/>
+                <GPTW />
+                <NossoTime />
             </div>
         </>
     )

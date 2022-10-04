@@ -7,7 +7,7 @@ type Props = {
     path: StaticImageData
 }
 
-export const Sectors = ({name, path}: Props) => {
+export const Setores = ({name, path}: Props) => {
     return (
         <>
             <div className="flex flex-col gap-y-8 items-center">

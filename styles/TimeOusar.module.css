@@ -1,0 +1,27 @@
+.timeContainer {
+    position: relative;
+    z-index: 1;
+    max-width: 100%;
+    overflow: hidden;
+    display: flex;
+}
+
+.timeInfo {
+    position: absolute;
+    bottom: 10px;
+    left: 100%;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .5s ease;
+    z-index: 99;
+    overflow: hidden;
+    width: 100vw
+}
+
+
+.timeContainer:hover .timeInfo {
+    left: 10px;
+    visibility: visible;
+    opacity: 1;
+    
+}
