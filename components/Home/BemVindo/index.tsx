@@ -14,7 +14,7 @@ export const BemVindo = () => {
                         inteligência corporativa e marketing digital.</p>
                     <Link href="/quem-somos"><a className="bg-red p-4 rounded text-white w-fit">Quem Somos</a></Link>
                 </div>
-                <ReactPlayer url='https://www.youtube.com/watch?v=5a84tXRpBJI' width="auto" height="300px" controls />
+                {/* <ReactPlayer url='https://www.youtube.com/watch?v=5a84tXRpBJI' width="auto" height="300px" controls /> */}
             </div>
         </div>
     )
