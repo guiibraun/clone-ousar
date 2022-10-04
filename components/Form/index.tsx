@@ -68,8 +68,7 @@ export const Form = () => {
                     <InputError error="telefone" />
                 }
                 <textarea className="py-2 px-4 text-black" rows={6} placeholder='Mensagem' {...register('message')} />
-                <input type="submit" value="Enviar" className="bg-blackSubmit p-2 text-white cursor-pointer" />
-                
+                <button type="submit" className="bg-blackSubmit p-2 text-white cursor-pointer">Enviar</button>
             </form>
         </div>
     )
