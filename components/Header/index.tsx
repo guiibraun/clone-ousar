@@ -27,11 +27,11 @@ const Header = () => {
             <div className="absolute text-white grid grid-cols-2 w-full md:py-8 p-4">
                 <div>
                     <Link href='/' >
-                        <a><Image src={LogoOusar} width={106} height={17} alt='' /></a>
+                        <a aria-label="Logo Ousar"><Image src={LogoOusar} width={106} height={17} alt='' /></a>
                     </Link>
                 </div>
 
-                <button className="lg:hidden justify-end flex" onClick={showMenu}>
+                <button className="lg:hidden justify-end flex" onClick={showMenu} title="Menu">
                     <Image alt='' src={menuIcon} />
                 </button>
                 <nav>
