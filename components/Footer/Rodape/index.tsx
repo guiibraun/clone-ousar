@@ -3,7 +3,7 @@ import Link from "next/link"
 export const Rodape = () => {
     return (
         <div className="bg-black lg:py-32 py-16 text-rodapeColor text-center md:text-left">
-            <div className="mx-auto max-w-6xl grid grid-cols-1 lg:grid-cols-3 justify-center items-start md:w-full w-11/12	mx-auto">
+            <div className="max-w-6xl grid grid-cols-1 lg:grid-cols-3 justify-center items-start md:w-full w-11/12	mx-auto">
                 <div className="gap-y-4 flex flex-col">
                     <p>Av. Santa Catarina, 1119 – Floresta, Joinville – SC – Sala 01
                         CEP: 89211-307
